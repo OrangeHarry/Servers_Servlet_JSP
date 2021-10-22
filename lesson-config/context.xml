@@ -29,14 +29,14 @@
     maxIdle : 최대 유지 가능한 사용하지 않는 커넥션 개수. 설정한 개수보다 많은 커넥션이 반환되면 반환되는 커넥션은 종료
     maxWait : 연결 가능한 커넥션이 최대값에 도달했을 때 기다리는 시간(밀리초). 기다리는 시간동안 반환되는 커넥션이 없으면 예외를 던짐
     close : 톰캣 서버 종료 시 자원 해제를 위해 호출 할 메소드 설정-->
-    <Resource name="jdbc/ipsa" auth="Container" type="javax.sql.DataSource"
+    <Resource name="jdbc/studydb" auth="Container" type="javax.sql.DataSource"
             maxActive="10"
             maxIdle="3"
             maxWait="10000"
-            username="ipsa"
-            password="1111"
+            username="study"
+            password="awdA~4862852"
             driverClassName="com.mysql.cj.jdbc.Driver"
-            url="jdbc:mysql://192.168.0.247/ipsa"
+            url="jdbc:mysql://localhost/studydb"
             closeMethod="close"></Resource>
 
     <!-- Uncomment this to disable session persistence across Tomcat restarts -->
